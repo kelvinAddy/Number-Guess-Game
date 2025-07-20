@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: hsl(0, 0%, 12%);
+    --bg-dark-mute:  hsl(0, 0%, 70%);
+    --text: hsl(0, 0%, 90%);
+    --ff: 'Press Start 2P';
+    --h1: 700 2.5rem/1em var(--ff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    color: var(--text);
+    font-family: var(--ff);
+}
+
+h1 {
+    font: var(--h1);
+    margin-bottom: 4rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+
+.game-wrapper {
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.output-container {
+    font-size: 3rem;
+    background-color: var(--text);
+    padding: 2rem;
+    width: 10rem;
+    color: var(--bg-dark);
+    margin: 0 auto;
+}
+
+.guess-section {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+input {
+    box-sizing: inherit;
+    text-align: center;
+    background-color: var(--bg-dark);
+    font-family: inherit;
+    color: var(--text);
+    font-size: 3rem;
+    border: 1px solid var(--bg-dark-mute);
+    width: 95%;
+    padding: 2rem 2.5rem;
+}
+button {
+    font-family: inherit;
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--bg-dark-mute);
+}
+
+.user-score {
+    text-align: left;
+    margin-top: 5rem;
+}
