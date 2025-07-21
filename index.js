@@ -1,5 +1,4 @@
 let randomNumber = Math.trunc(Math.random() * 20) + 1;
-console.log(randomNumber);
 let score = 20;
 let gameLost = false;
 let highScore = 0;
@@ -84,5 +83,4 @@ document.querySelector(".reset-btn").addEventListener("click", () => {
   score = 20;
   updateScore(score);
   randomNumber = Math.trunc(Math.random() * 20) + 1;
-  console.log(randomNumber);
 });
