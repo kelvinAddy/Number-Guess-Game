@@ -9,23 +9,23 @@
   <body>
     <div class="game-wrapper">
       <header>
-        <button>Again!</button>
+        <button class="reset-btn">Again!</button>
         <p>(Between 1 and 20)</p>
       </header>
       <main>
-        <h1>Guess the Number!</h1>
+        <h1 class="header-label">Guess the Number!</h1>
         <div class="output-container">?</div>
         <section class="guess-section">
           <div class="input-container">
             <form>
-              <input type="number" min="1" max="20" />
+              <input type="number" min="1" max="20" class="user-guess" />
             </form>
-            <button>Check!</button>
+            <button class="submit">Check!</button>
           </div>
           <div class="score-container">
-            <p>Start guessing...</p>
+            <p id="game-state-label">Start guessing...</p>
             <div class="user-score">
-              <p>💯 Score: <span id="current-score">0</span></p>
+              <p>💯 Score: <span id="current-score">20</span></p>
               <p>🥇 HighScore: <span id="high-score">0</span></p>
             </div>
           </div>
@@ -33,4 +33,5 @@
       </main>
     </div>
   </body>
+  <script src="./index.js"></script>
 </html>

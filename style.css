@@ -71,9 +71,9 @@ main {
 input {
     box-sizing: inherit;
     text-align: center;
-    background-color: var(--bg-dark);
+    background-color: inherit;
     font-family: inherit;
-    color: var(--text);
+    color: inherit;
     font-size: 3rem;
     border: 1px solid var(--bg-dark-mute);
     width: 95%;
